@@ -1,0 +1,28 @@
+{
+  "name": "chatty-server",
+  "version": "1.0.0",
+  "description": "back-end for chatty",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrikMiskov/chatty-server.git"
+  },
+  "author": "Patrik Miškov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatrikMiskov/chatty-server/issues"
+  },
+  "homepage": "https://github.com/PatrikMiskov/chatty-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.23.3"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
