@@ -6,7 +6,13 @@ const apiRouter = require('./routers/api');
 const app = express();
 
 app.use(helmet());
-app.use(express.json);
+
+// server hartbeat
+app.get('/', (req, res)=>{
+  res.send(true).status(200);
+});
+
+app.use(express.json());
 app.use(apiRouter);
 
 const PORT = process.env.PORT || 3000;
